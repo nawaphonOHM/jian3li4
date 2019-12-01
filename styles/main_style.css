@@ -10,6 +10,12 @@
     overflow: hidden;
 }
 
+.bullet{
+    max-width: 6px !important;
+    max-height: 6px !important;
+    overflow: hidden;
+}
+
 body{
     min-width: 21cm;
     min-height: 29.7cm;
@@ -17,9 +23,14 @@ body{
     font-family: Ubuntu;
 }
 
-g{
+.introductSVG{
     transform: scaleX(0.46875) scaleY(0.468503937);
     fill: #ffffff;
+}
+
+.educationSVG{
+    fill: #479099;
+    transform: scaleX(0.6) scaleY(0.6); 
 }
 
 svg{
@@ -160,15 +171,33 @@ svg{
 }
 
 .details > .leftSection > .workExperience > .details > [class^="number"] > .coporationType, 
-.details > .leftSection > .education > .details > [class^="number"] > .details{
+.details > .leftSection > .education > .details > [class^="number"] > .seniorProject{
     font-size: 12px;
     padding: 0 0px 0 37.5px;
     font-style: italic;
+}
+
+.details > .leftSection > .workExperience > .details > [class^="number"] > .coporationType{
     color: #7c7c7c;
 }
 
-.details > .leftSection > .education > .details > [class^="number"] > .details{
+.details > .leftSection > .education > .details > [class^="number"] > .seniorProject{
     color: #479099;
+}
+
+.details > .leftSection > .education > .details > [class^="number"] > .seniorProject > .details > [class^="number"]{
+    display: flex;
+    flex-direction: row;
+}
+
+.details > .leftSection > .education > .details > [class^="number"] > .seniorProject > .details > [class^="number"] > .details{
+    padding: 0 0 0 15px;
+    color: #000000;
+    font-style: normal;
+}
+
+.details > .leftSection > .education > .details > [class^="number"] > .seniorProject > .header{
+    margin: 0 0 3px 0;
 }
 
 .details > .leftSection > .workExperience > .details > .header, 
