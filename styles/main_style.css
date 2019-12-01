@@ -99,3 +99,43 @@ svg{
     flex-wrap: wrap;
     background-color: #479099;
 }
+
+.details{
+    display: flex;
+    flex-direction: row;
+}
+
+.details > .leftSection{
+    min-width: 50%;
+}
+
+.details > .rightSection{
+    min-width: 50%;
+}
+
+.details > .leftSection > .workExperience > [class$="Section"] > .header{
+    font-weight: 700;
+    color: #479099;
+    margin: 0 0 10.5px 0;
+    font-size: 21px;
+}
+
+.details > .leftSection > .workExperience > [class$="Section"] > .header{
+    padding: 0 27px 0 37.5px;
+}
+
+.details > .leftSection > .workExperience > [class$="Section"] > .details > [class^="number"] > .name{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0 27px 0 37.5px;
+}
+
+.details > .leftSection > .workExperience > [class$="Section"] > .details > .header{
+    height: 2px;
+    width: 18px;
+    background-color: #479099;
+    margin-top: 10px;
+    position: absolute;
+    
+}
+
