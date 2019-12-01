@@ -113,6 +113,10 @@ svg{
     min-width: 50%;
 }
 
+.details > .leftSection > .workExperience{
+    margin: 0 0 25.5px 0;
+}
+
 .details > .leftSection > .workExperience > .header{
     font-weight: 700;
     color: #479099;
@@ -138,7 +142,7 @@ svg{
     margin: 0 0 1.5px 0;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > div:nth-child(2){
+.details > .leftSection > .workExperience > .details > [class^="number"] > div:nth-child(n+2){
     margin: 0 0 6px 0;
 }
 
@@ -150,6 +154,13 @@ svg{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.details > .leftSection > .workExperience > .details > [class^="number"] > .coporationType{
+    font-size: 12px;
+    padding: 0 0px 0 37.5px;
+    font-style: italic;
+    color: #7c7c7c;
 }
 
 .details > .leftSection > .workExperience > .details > .header{
