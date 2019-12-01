@@ -113,29 +113,50 @@ svg{
     min-width: 50%;
 }
 
-.details > .leftSection > .workExperience > [class$="Section"] > .header{
+.details > .leftSection > .workExperience > .header{
     font-weight: 700;
     color: #479099;
     margin: 0 0 10.5px 0;
     font-size: 21px;
 }
 
-.details > .leftSection > .workExperience > [class$="Section"] > .header{
+.details > .leftSection > .workExperience > .header{
     padding: 0 27px 0 37.5px;
 }
 
-.details > .leftSection > .workExperience > [class$="Section"] > .details > [class^="number"] > .name{
-    font-weight: 700;
+.details > .leftSection > .workExperience > .details > [class^="number"]{
+    min-width: 100%;
+}
+
+.details > .leftSection > .workExperience > .details > [class^="number"] > div{
+    padding: 0 27px 0 37.5px;
     font-size: 18px;
-    padding: 0 27px 0 37.5px;
 }
 
-.details > .leftSection > .workExperience > [class$="Section"] > .details > .header{
+.details > .leftSection > .workExperience > .details > [class^="number"] > div:nth-child(1){
+    font-weight: 700;
+    margin: 0 0 1.5px 0;
+}
+
+.details > .leftSection > .workExperience > .details > [class^="number"] > div:nth-child(2){
+    margin: 0 0 6px 0;
+}
+
+.details > .leftSection > .workExperience > .details > [class^="number"] > .date{
+    font-size: 12px;
+    padding: 0 0px 0 37.5px;
+    color: #479099;
+    font-style: italic;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.details > .leftSection > .workExperience > .details > .header{
     height: 2px;
     width: 18px;
     background-color: #479099;
     margin-top: 10px;
     position: absolute;
-    
 }
 
