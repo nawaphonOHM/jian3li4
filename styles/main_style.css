@@ -113,40 +113,43 @@ svg{
     min-width: 50%;
 }
 
-.details > .leftSection > .workExperience{
+.details > .leftSection > div:nth-child(n){
     margin: 0 0 25.5px 0;
 }
 
-.details > .leftSection > .workExperience > .header{
+.details > .leftSection > .workExperience > .header, 
+.details > .leftSection > .education > .header{
     font-weight: 700;
     color: #479099;
     margin: 0 0 10.5px 0;
+    padding: 0 27px 0 37.5px;
     font-size: 21px;
 }
 
-.details > .leftSection > .workExperience > .header{
-    padding: 0 27px 0 37.5px;
-}
-
-.details > .leftSection > .workExperience > .details > [class^="number"]{
+.details > .leftSection > .workExperience > .details > [class^="number"], 
+.details > .leftSection > .education > .details > [class^="number"]{
     min-width: 100%;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > div{
+.details > .leftSection > .workExperience > .details > [class^="number"] > div, 
+.details > .leftSection > .education > .details > [class^="number"] > div{
     padding: 0 27px 0 37.5px;
     font-size: 18px;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > div:nth-child(1){
+.details > .leftSection > .workExperience > .details > [class^="number"] > div:nth-child(1), 
+.details > .leftSection > .education > .details > [class^="number"] > div:nth-child(1){
     font-weight: 700;
     margin: 0 0 1.5px 0;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > div:nth-child(n+2){
+.details > .leftSection > .workExperience > .details > [class^="number"] > div:nth-child(n+2), 
+.details > .leftSection > .education > .details > [class^="number"] > div:nth-child(n+2){
     margin: 0 0 6px 0;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > .date{
+.details > .leftSection > .workExperience > .details > [class^="number"] > .date, 
+.details > .leftSection > .education > .details > [class^="number"] > .year{
     font-size: 12px;
     padding: 0 0px 0 37.5px;
     color: #479099;
@@ -156,14 +159,20 @@ svg{
     justify-content: space-between;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > .coporationType{
+.details > .leftSection > .workExperience > .details > [class^="number"] > .coporationType, 
+.details > .leftSection > .education > .details > [class^="number"] > .details{
     font-size: 12px;
     padding: 0 0px 0 37.5px;
     font-style: italic;
     color: #7c7c7c;
 }
 
-.details > .leftSection > .workExperience > .details > .header{
+.details > .leftSection > .education > .details > [class^="number"] > .details{
+    color: #479099;
+}
+
+.details > .leftSection > .workExperience > .details > .header, 
+.details > .leftSection > .education > .details > .header{
     height: 2px;
     width: 18px;
     background-color: #479099;
