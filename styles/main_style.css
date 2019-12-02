@@ -30,7 +30,8 @@ body{
     fill: #ffffff;
 }
 
-.educationSVG{
+.educationSVG, 
+.personalProjectSVG{
     fill: #479099;
     transform: scaleX(0.6) scaleY(0.6); 
 }
@@ -52,6 +53,7 @@ svg{
 .introducingSelf{
     padding: 33px 0 0 0;
     margin: 0 0 15px 0;
+    min-width: 100%;
 }
 
 .secondSection > div:nth-child(odd){
@@ -110,13 +112,35 @@ svg{
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.introducingSelf > .secondSection, 
+.rightSection > .programmingLanguages > .details > [class^="number"] > .details{
     background-color: #479099;
 }
 
-.details{
+.rightSection > .programmingLanguages > .details > [class^="number"] > .details{
+    display: inline;
+    padding: 4.5px 10.5px 4.5px 10.5px;
+    border-radius: 4.5px;
+    color: #ffffff;
+}
+
+.rightSection > .programmingLanguages > .details > [class^="number"] > .details, 
+.rightSection > .languages > .details > [class^="number"] > .header{
+    font-size: 13.5px;
+}
+
+
+.outest > .details{
     display: flex;
     flex-direction: row;
 }
+
+.details > .leftSection > .personalProject > .details{
+    display: flex;
+    flex-direction: column;
+} 
 
 .details > .leftSection{
     min-width: 50%;
@@ -126,19 +150,38 @@ svg{
 .details > .rightSection{
     min-width: 50%;
     max-width: 50%;
+    padding-left: 80px;
 }
 
-.details > .leftSection > div:nth-child(n){
+.details > .leftSection > div:nth-child(n), 
+.details > .rightSection > div:nth-child(n){
     margin: 0 0 25.5px 0;
 }
 
-.details > .leftSection > .workExperience > .header, 
-.details > .leftSection > .education > .header{
+.details > .leftSection > div:nth-child(n) > .header, 
+.details > .rightSection > div:nth-child(n) > .header{
     font-weight: 700;
     color: #479099;
     margin: 0 0 10.5px 0;
     padding: 0 27px 0 37.5px;
     font-size: 21px;
+}
+
+.details > .rightSection > .languages > .details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.details > .rightSection > .languages > .details > [class^="number"] > .details{
+    font-size: 12px;
+    color: #479099;
+    font-style: italic;
+}
+
+.details > .rightSection > .languages > .details > [class^="number"]{
+    min-width: 50%;
+    margin: 0 0 10.5px 0;
 }
 
 .details > .leftSection > .workExperience > .details > [class^="number"], 
@@ -148,8 +191,48 @@ svg{
 
 .details > .leftSection > .workExperience > .details > [class^="number"] > div, 
 .details > .leftSection > .education > .details > [class^="number"] > div{
-    padding: 0 27px 0 37.5px;
     font-size: 18px;
+}
+ 
+.details > .leftSection > div:nth-child(n) > .details > [class^="number"] > div{
+    padding: 0 27px 0 37.5px;
+}
+
+.rightSection > .programmingLanguages > .details, 
+.rightSection > .languages > .details{
+    padding: 0 0 0 37.5px;
+}
+
+.rightSection > .interest > .details{
+    margin: 0 0 0 37.5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rightSection > .interest > .details > [class^="number"]{
+    border-color: #7c7c7c;
+    border-style: solid;
+    width: fit-content;
+    border-radius: 4.5px;
+    border-width: 1.5px;
+    padding: 6px;
+    margin: 0 10px 0 0;
+}
+
+.rightSection > .interest > .details > [class^="number"] > .details{
+    font-size: 13.5px;
+}
+
+.rightSection > .programmingLanguages > .details{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.rightSection > .programmingLanguages > .details > div:nth-child(n){
+    margin: 0 10px 20px 0;
 }
 
 .details > .leftSection > .workExperience > .details > [class^="number"] > 
@@ -163,17 +246,32 @@ div:nth-child(1){
 .details > .leftSection > .workExperience > .details > [class^="number"] > 
 div:nth-child(n+2), 
 .details > .leftSection > .education > .details > [class^="number"] > 
+div:nth-child(n+2), 
+.details > .leftSection > .achivement > .details > [class^="number"] > 
 div:nth-child(n+2){
     margin: 0 0 6px 0;
 }
 
 .details > .leftSection > .workExperience > .details > [class^="number"] > 
 .date, 
-.details > .leftSection > .education > .details > [class^="number"] > .year{
+.details > .leftSection > .education > .details > [class^="number"] > .year, 
+.details > .leftSection > .achivement > .details > [class^="number"] > 
+.year, 
+.details > .leftSection > .achivement > .details > [class^="number"] > 
+.description{
     font-size: 12px;
-    padding: 0 0px 0 37.5px;
-    color: #479099;
     font-style: italic;
+}
+
+.details > .leftSection > .achivement > .details > [class^="number"] > 
+.description{
+    color: #7c7c7c;
+}
+
+.details > .leftSection > .workExperience > .details > [class^="number"] > 
+.date, 
+.details > .leftSection > .education > .details > [class^="number"] > .year{
+    color: #479099;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -199,7 +297,9 @@ div:nth-child(n+2){
 }
 
 .details > .leftSection > .education > .details > [class^="number"] > 
-.seniorProject > .details > [class^="number"]{
+.seniorProject > .details > [class^="number"], 
+.details > .leftSection > .personalProject > .details > [class^="number"] > 
+[class^="number"]{
     display: flex;
     flex-direction: row;
 }
@@ -212,8 +312,30 @@ div:nth-child(n+2){
 }
 
 .details > .leftSection > .education > .details > [class^="number"] > 
-.seniorProject > .header{
+.seniorProject > .header, 
+.details > .leftSection > .personalProject > .details > [class^="number"] > 
+.name, 
+.details > .leftSection > .achivement > .details > [class^="number"] > 
+.name{
     margin: 0 0 3px 0;
+}
+
+.details > .leftSection > .personalProject > .details > [class^="number"] > 
+.name, 
+.details > .leftSection > .achivement > .details > [class^="number"] > 
+.name{
+    font-size: 15px;
+}
+
+.details > .leftSection > .personalProject > .details > [class^="number"]{
+    padding: 0 0 12px 0;
+    margin: 0 0 12px 0;
+}
+
+.details > .leftSection > .personalProject > .details > [class^="number"] > 
+[class^="number"] > .details{
+    font-size: 12px;
+    padding: 0 0 0 8px;
 }
 
 .details > .leftSection > .workExperience > .details > .header, 
