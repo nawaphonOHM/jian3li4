@@ -19,7 +19,9 @@
 body{
     min-width: 21cm;
     min-height: 29.7cm;
-    margin: auto;
+    max-width: 21cm;
+    max-height: 29.7cm;
+    margin: 0;
     font-family: Ubuntu;
 }
 
@@ -118,10 +120,12 @@ svg{
 
 .details > .leftSection{
     min-width: 50%;
+    max-width: 50%;
 }
 
 .details > .rightSection{
     min-width: 50%;
+    max-width: 50%;
 }
 
 .details > .leftSection > div:nth-child(n){
@@ -148,18 +152,23 @@ svg{
     font-size: 18px;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > div:nth-child(1), 
-.details > .leftSection > .education > .details > [class^="number"] > div:nth-child(1){
+.details > .leftSection > .workExperience > .details > [class^="number"] > 
+div:nth-child(1), 
+.details > .leftSection > .education > .details > [class^="number"] > 
+div:nth-child(1){
     font-weight: 700;
     margin: 0 0 1.5px 0;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > div:nth-child(n+2), 
-.details > .leftSection > .education > .details > [class^="number"] > div:nth-child(n+2){
+.details > .leftSection > .workExperience > .details > [class^="number"] > 
+div:nth-child(n+2), 
+.details > .leftSection > .education > .details > [class^="number"] > 
+div:nth-child(n+2){
     margin: 0 0 6px 0;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > .date, 
+.details > .leftSection > .workExperience > .details > [class^="number"] > 
+.date, 
 .details > .leftSection > .education > .details > [class^="number"] > .year{
     font-size: 12px;
     padding: 0 0px 0 37.5px;
@@ -170,33 +179,40 @@ svg{
     justify-content: space-between;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > .coporationType, 
-.details > .leftSection > .education > .details > [class^="number"] > .seniorProject{
+.details > .leftSection > .workExperience > .details > [class^="number"] > 
+.coporationType, 
+.details > .leftSection > .education > .details > 
+[class^="number"] > .seniorProject{
     font-size: 12px;
     padding: 0 0px 0 37.5px;
     font-style: italic;
 }
 
-.details > .leftSection > .workExperience > .details > [class^="number"] > .coporationType{
+.details > .leftSection > .workExperience > .details > [class^="number"] > 
+.coporationType{
     color: #7c7c7c;
 }
 
-.details > .leftSection > .education > .details > [class^="number"] > .seniorProject{
+.details > .leftSection > .education > .details > [class^="number"] > 
+.seniorProject{
     color: #479099;
 }
 
-.details > .leftSection > .education > .details > [class^="number"] > .seniorProject > .details > [class^="number"]{
+.details > .leftSection > .education > .details > [class^="number"] > 
+.seniorProject > .details > [class^="number"]{
     display: flex;
     flex-direction: row;
 }
 
-.details > .leftSection > .education > .details > [class^="number"] > .seniorProject > .details > [class^="number"] > .details{
+.details > .leftSection > .education > .details > [class^="number"] > 
+.seniorProject > .details > [class^="number"] > .details{
     padding: 0 0 0 8px;
     color: #000000;
     font-style: normal;
 }
 
-.details > .leftSection > .education > .details > [class^="number"] > .seniorProject > .header{
+.details > .leftSection > .education > .details > [class^="number"] > 
+.seniorProject > .header{
     margin: 0 0 3px 0;
 }
 
