@@ -41,6 +41,23 @@ svg{
     max-height: 15px !important;
 }
 
+.details > .leftSection > div:nth-child(n) > .header, 
+.details > .rightSection > div:nth-child(n) > .header, 
+.details > .leftSection > .workExperience > .details > [class^="number"] > 
+.date, 
+.details > .leftSection > .education > .details > [class^="number"] > .year, 
+.details > .rightSection > .languages > .details > [class^="number"] > .details, 
+.details > .rightSection > .references > .details > [class^="number"] > 
+.contact > .header{
+    color: #479099;
+}
+
+.details > .rightSection > .references > .details > [class^="number"] > 
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+
 .outest{
     background: url("../images/background-image.svg") no-repeat;
     background-size: 100%;
@@ -161,7 +178,6 @@ svg{
 .details > .leftSection > div:nth-child(n) > .header, 
 .details > .rightSection > div:nth-child(n) > .header{
     font-weight: 700;
-    color: #479099;
     margin: 0 0 10.5px 0;
     padding: 0 27px 0 37.5px;
     font-size: 21px;
@@ -171,12 +187,6 @@ svg{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.details > .rightSection > .languages > .details > [class^="number"] > .details{
-    font-size: 12px;
-    color: #479099;
-    font-style: italic;
 }
 
 .details > .rightSection > .languages > .details > [class^="number"]{
@@ -198,13 +208,11 @@ svg{
     padding: 0 27px 0 37.5px;
 }
 
-.rightSection > .programmingLanguages > .details, 
-.rightSection > .languages > .details{
-    padding: 0 0 0 37.5px;
+.rightSection > div:nth-child(n) > .details{
+    margin: 0 0 0 37.5px;
 }
 
 .rightSection > .interest > .details{
-    margin: 0 0 0 37.5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -258,9 +266,29 @@ div:nth-child(n+2){
 .details > .leftSection > .achivement > .details > [class^="number"] > 
 .year, 
 .details > .leftSection > .achivement > .details > [class^="number"] > 
-.description{
+.description, 
+.details > .leftSection > .workExperience > .details > [class^="number"] > 
+.coporationType, 
+.details > .leftSection > .education > .details > 
+[class^="number"] > .seniorProject, 
+.details > .rightSection > .languages > .details > [class^="number"] > 
+.details, 
+.rightSection > .references > .details > [class^="number"] > .description, 
+.rightSection > .references > .details > [class^="number"] > .contact > 
+.header, 
+.details > .rightSection > .references > .details > [class^="number"] > 
+.contact > .details{
     font-size: 12px;
     font-style: italic;
+}
+
+.details > .rightSection > .references > .details > [class^="number"] > 
+.contact > .header{
+    padding: 0 4.5px 0 0;
+}
+
+.details > .rightSection > .references > .details > [class^="number"]{
+    margin: 0 0 16.5px 0;
 }
 
 .details > .leftSection > .achivement > .details > [class^="number"] > 
@@ -271,7 +299,6 @@ div:nth-child(n+2){
 .details > .leftSection > .workExperience > .details > [class^="number"] > 
 .date, 
 .details > .leftSection > .education > .details > [class^="number"] > .year{
-    color: #479099;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -281,9 +308,7 @@ div:nth-child(n+2){
 .coporationType, 
 .details > .leftSection > .education > .details > 
 [class^="number"] > .seniorProject{
-    font-size: 12px;
     padding: 0 0px 0 37.5px;
-    font-style: italic;
 }
 
 .details > .leftSection > .workExperience > .details > [class^="number"] > 
@@ -323,8 +348,25 @@ div:nth-child(n+2){
 .details > .leftSection > .personalProject > .details > [class^="number"] > 
 .name, 
 .details > .leftSection > .achivement > .details > [class^="number"] > 
-.name{
+.name, 
+.rightSection > .references > .details > [class^="number"] > .name{
     font-size: 15px;
+}
+
+.rightSection > .references > .details > [class^="number"] > .contact > .header::after{
+    content: ":";
+}
+
+.rightSection > .references > .details > [class^="number"] > div{
+    margin: 0 0 4.5px 0;
+}
+
+.rightSection > .references > .details > [class^="number"] > .description::before{
+    content: "\"";
+}
+
+.rightSection > .references > .details > [class^="number"] > .description::after{
+    content: "\"";
 }
 
 .details > .leftSection > .personalProject > .details > [class^="number"]{
